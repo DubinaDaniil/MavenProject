@@ -1,12 +1,13 @@
 package org.example;
 
-/**
- * Created ${DATE} ${TIME}
- *
- * @since 3.5.0
- */
+import com.google.gson.*;
+
+import java.util.*;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Gson gson = new Gson();
+        System.out.println(gson.toJson(List.of(new PrintMyName("Daniil", "Dubina"))));
     }
 }
